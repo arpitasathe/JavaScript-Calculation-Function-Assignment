@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+</head>
+<body>
+
+<h1> Calculator</h1>
+
+
+
+
+<label for="num1">Enter first number:</label>
+<input type="number" id="num1">
+
+<label for="num2">Enter second number:</label>
+<input type="number" id="num2">
+
+
+
+<button onclick="addition()">+</button>
+<button onclick="substraction()">-</button>
+<button onclick="multiplication()">X</button>
+<button onclick="division()">/</button><br><br>
+
+<label for="amount">Enter Amount:</label>
+<input type="number" id="amount">
+
+<label for="per">Enter Tax Percentage:</label>
+<input type="number" id="per">
+<button onclick="taxCalculator()">Tax</button><br><br>
+
+<form id="arrayForm">
+	<label for="arrayInput">Enter elements (space-separated):</label><br>
+	<input type="text " id="arrayInput" name="arrayInput"><br><br>
+	<button type="button" onclick="submitArray()">Submit</button>
+</form>
+
+<br><br>
+
+<label for="prin">Enter Principle:</label>
+<input type="number" id="prin">
+
+<label for="peri">Enter Period:</label>
+<input type="number" id="peri"><br><br>
+
+<label for="rate">Enter Rate:</label>
+<input type="float" id="rate">
+
+<label for="rei">Enter Rate Of interest on (day, month, year, quarter, half-year, week):</label>
+<input type="text" id="rei"><br><br>
+
+<button onclick="interestCalculator()">Interest and Total Amount</button><br><br>
+
+<button onclick="verticalSumArrayResult()">Total Price and Total Quantity</button><br><br>
+<input type="number" id="numb1"><br><br>
+<button onclick="generateRandomNumber()"> generate Random Number </button><br><br>
+
+<h2>Answer:</h2>
+
+<p id="result"></p>
+<p id="result1"></p>
+<script src="calculations.js"></script>
+
+</body>
+</html>
